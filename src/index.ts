@@ -10,6 +10,7 @@ const fetchDashboardFeedHtml = async () => {
   return res.text();
 };
 
+// TODO: mimic GitHub loading
 const loading = document.createElement('p');
 loading.textContent = 'Loading...';
 
@@ -22,6 +23,7 @@ loading.textContent = 'Loading...';
 
     const oldDashboard = document.createElement('template');
     oldDashboard.append(loading);
+
     targetEl.innerHTML = oldDashboard.innerHTML;
     // Wait for the new dashboard to be loaded
     targetEl.innerHTML = await fetchDashboardFeedHtml();
