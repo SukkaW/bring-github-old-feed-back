@@ -1,5 +1,5 @@
 {
-  "name": "Bring Old GitHub Feed Back",
+  "name": "Bring GitHub Old Feed Back",
   "namespace": "https://skk.moe",
   "grant": ["none"],
   "run-at": "document-idle",

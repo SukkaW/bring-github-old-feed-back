@@ -1,8 +1,8 @@
 {
   "name": "bring-github-old-feed-back",
   "version": "0.1.0",
-  "description": "Bring Old GitHub Feed Back",
-  "main": "index.js",
+  "description": "Replace GitHub new useless \"For You\" feed with the old \"Following\" one.",
+  "main": "dist/bring-github-old-feed-back.user.js",
   "files": [
     "dist"
   ],
