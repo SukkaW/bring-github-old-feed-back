@@ -5,7 +5,8 @@
   },
   "ignorePatterns": [
     "dist/**/*",
-    "test/**/*"
+    "test/**/*",
+    "src/dummy.js"
   ],
   "overrides": [
     {

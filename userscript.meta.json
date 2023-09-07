@@ -7,5 +7,7 @@
     "https://github.com",
     "https://github.com/",
     "https://github.com/dashboard"
-  ]
+  ],
+  "downloadURL": "https://unpkg.com/bring-github-old-feed-back/dist/bring-github-old-feed-back.user.js",
+  "updateURL": "https://unpkg.com/bring-github-old-feed-back/dist/bring-github-old-feed-back.meta.js"
 }
