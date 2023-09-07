@@ -15,6 +15,9 @@
   "keywords": [
     "github"
   ],
+  "repository": {
+    "url": "https://github.com/SukkaW/bring-github-old-feed-back"
+  },
   "author": "SukkaW <https://skk.moe>",
   "license": "MIT",
   "devDependencies": {
