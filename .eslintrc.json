@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "ignorePatterns": [
+    "dist/**/*",
+    "test/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.json",
+        "sourceType": "module"
+      },
+      "extends": "sukka/typescript"
+    }
+  ]
+}

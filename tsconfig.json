@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "lib": ["es2020", "dom", "dom.iterable"],
+    "target": "es2020",
+    "module": "esnext",
+    "declaration": false,
+    "outDir": ".",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": ["greasemonkey"]
+  },
+  "include": ["src", "rollup.config.ts"],
+  "exclude": ["dist", "test"]
+}

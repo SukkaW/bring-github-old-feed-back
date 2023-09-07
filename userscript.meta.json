@@ -1,0 +1,11 @@
+{
+  "name": "Bring Old GitHub Feed Back",
+  "namespace": "https://skk.moe",
+  "grant": ["none"],
+  "run-at": "document-idle",
+  "include": [
+    "https://github.com",
+    "https://github.com/",
+    "https://github.com/dashboard"
+  ]
+}
