@@ -1,6 +1,6 @@
 {
   "name": "bring-github-old-feed-back",
-  "version": "0.1.1",
+  "version": "0.1.2-beta.0",
   "description": "Replace GitHub new useless \"For You\" feed with the old \"Following\" one.",
   "main": "dist/bring-github-old-feed-back.user.js",
   "files": [
