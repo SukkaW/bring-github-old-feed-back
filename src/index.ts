@@ -21,6 +21,16 @@ loading.textContent = 'Loading...';
     // Add the missing `role="tabpanel"` to the target element to make it work
     targetEl.role = 'tabpanel';
 
+    // adjust margin
+    const contentEl = document.querySelector('div.feed-content');
+    if (contentEl) {
+      contentEl.style.maxWidth = 'calc(1440px + var(--feed-sidebar) + 48px)';
+    }
+    const mainEl = document.querySelector('div.feed-main');
+    if (mainEl) {
+      mainEl.style.maxWidth = '1440px';
+    }
+
     const oldDashboard = document.createElement('template');
     oldDashboard.append(loading);
 
