@@ -1,6 +1,6 @@
 # Bring GitHub Old Feed Back
 
-Throw away the GitHub's useless "For You" feed and replace with the old good "Following" feed
+Throw away GitHub's useless "For You" feed and replace with the old good "Following" feed
 
 ## Installation
 
