@@ -2,7 +2,7 @@
   "name": "Bring GitHub Old Feed Back",
   "namespace": "https://skk.moe",
   "grant": ["none"],
-  "run-at": "document-idle",
+  "run-at": "document-end",
   "include": [
     "https://github.com",
     "https://github.com/",
