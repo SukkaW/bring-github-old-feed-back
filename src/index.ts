@@ -17,22 +17,6 @@ const stringToDOM = (html: string) => {
   return t.content.firstChild as HTMLElement;
 };
 
-const loading = stringToDOM(`
-<div class="text-center">
-  <picture>
-    <source srcset="https://github.githubassets.com/images/mona-loading-dark.gif" media="(prefers-color-scheme: dark)">
-    <source srcset="https://github.githubassets.com/images/mona-loading-default.gif" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-    <img src="https://github.githubassets.com/images/mona-loading-default.gif" width="48" alt="Loading your activity..." class="mt-4 hide-reduced-motion">
-  </picture>
-  <picture>
-    <source srcset="https://github.githubassets.com/images/mona-loading-dark-static.svg" media="(prefers-color-scheme: dark)">
-    <source srcset="https://github.githubassets.com/images/mona-loading-default-static.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-    <img src="https://github.githubassets.com/images/mona-loading-default-static.svg" width="48" alt="Loading your activity..." class="mt-4 hide-no-pref-motion">
-  </picture>
-  <p class="color-fg-muted my-2">One moment please...</p>
-</div>
-`);
-
 (async () => {
   const targetEl = document.querySelector('#dashboard > div > feed-container > div[data-target="feed-container.content"]');
 
@@ -80,7 +64,21 @@ const loading = stringToDOM(`
     }
 
     const oldDashboard = document.createElement('template');
-    oldDashboard.append(loading);
+    oldDashboard.append(stringToDOM(`
+    <div class="text-center">
+      <picture>
+        <source srcset="https://github.githubassets.com/images/mona-loading-dark.gif" media="(prefers-color-scheme: dark)">
+        <source srcset="https://github.githubassets.com/images/mona-loading-default.gif" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+        <img src="https://github.githubassets.com/images/mona-loading-default.gif" width="48" alt="Loading your activity..." class="mt-4 hide-reduced-motion">
+      </picture>
+      <picture>
+        <source srcset="https://github.githubassets.com/images/mona-loading-dark-static.svg" media="(prefers-color-scheme: dark)">
+        <source srcset="https://github.githubassets.com/images/mona-loading-default-static.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+        <img src="https://github.githubassets.com/images/mona-loading-default-static.svg" width="48" alt="Loading your activity..." class="mt-4 hide-no-pref-motion">
+      </picture>
+      <p class="color-fg-muted my-2">One moment please...</p>
+    </div>
+    `));
 
     targetEl.innerHTML = oldDashboard.innerHTML;
     // Wait for the new dashboard to be loaded
