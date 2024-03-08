@@ -4,7 +4,7 @@ Throw away GitHub's useless "For You" feed and replace with the old good "Follow
 
 ## Installation
 
-https://unpkg.com/bring-github-old-feed-back@latest/dist/bring-github-old-feed-back.user.js
+https://cdn.jsdelivr.net/npm/bring-github-old-feed-back@latest/dist/bring-github-old-feed-back.user.js
 
 ----
 
