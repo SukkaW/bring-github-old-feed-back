@@ -17,7 +17,21 @@ const stringToDOM = (html: string) => {
   return t.content.firstChild as HTMLElement;
 };
 
+const css = (string: TemplateStringsArray, ...values: any[]) => string.reduce((acc, str, i) => acc + str + (values[i] ?? ''), '');
+
 (async () => {
+  document.head.appendChild(document.createElement('style')).textContent = css`
+    /** GitHub Feed Filter Menu */
+    #feed-filter-menu {
+      display: none;
+    }
+
+    /** GitHub Feed...back Link */
+    a[href*="github.com/orgs/github-community/discussions/categories/feed"] {
+      display: none;
+    }
+  `
+
   const targetEl = document.querySelector('#dashboard > div > feed-container > div[data-target="feed-container.content"]');
 
   /**
