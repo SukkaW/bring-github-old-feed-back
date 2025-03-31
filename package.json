@@ -21,12 +21,12 @@
   "author": "SukkaW <https://skk.moe>",
   "license": "MIT",
   "devDependencies": {
-    "@swc/core": "^1.8.0",
+    "@swc/core": "^1.11.13",
     "@types/greasemonkey": "^4.0.7",
-    "bumpp": "^9.8.1",
-    "eslint": "^9.14.0",
-    "eslint-config-sukka": "^6.9.0",
-    "rollup": "^4.24.4",
+    "bumpp": "^10.1.0",
+    "eslint": "^9.23.0",
+    "eslint-config-sukka": "^6.18.0",
+    "rollup": "^4.38.0",
     "rollup-plugin-swc3": "^0.12.1",
     "rollup-plugin-userscript-metablock": "^0.4.2",
     "typed-query-selector": "^2.12.0"
@@ -34,5 +34,5 @@
   "overrides": {
     "has": "npm:@nolyfill/has@latest"
   },
-  "packageManager": "pnpm@9.12.3"
+  "packageManager": "pnpm@10.7.0"
 }
