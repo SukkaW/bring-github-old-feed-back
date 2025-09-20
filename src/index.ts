@@ -1,6 +1,6 @@
 import 'typed-query-selector';
 
-const fetchDashboardFeedHtml = async () => {
+async function fetchDashboardFeedHtml() {
   const res = await fetch('https://github.com/dashboard-feed', {
     headers: {
       // With this header, GitHub will not return App Shell, only the content's HTML
@@ -8,14 +8,14 @@ const fetchDashboardFeedHtml = async () => {
     }
   });
   return res.text();
-};
+}
 
 /** create dom from html string */
-const stringToDOM = (html: string) => {
+function stringToDOM(html: string) {
   const t = document.createElement('template');
   t.innerHTML = html;
   return t.content.firstChild as HTMLElement;
-};
+}
 
 const css = (string: TemplateStringsArray, ...values: any[]) => string.reduce((acc, str, i) => acc + str + (values[i] ?? ''), '');
 
@@ -30,7 +30,7 @@ const css = (string: TemplateStringsArray, ...values: any[]) => string.reduce((a
     a[href*="github.com/orgs/github-community/discussions/categories/feed"] {
       display: none;
     }
-  `
+  `;
 
   const targetEl = document.querySelector('#dashboard > div > feed-container > div[data-target="feed-container.content"]');
 
