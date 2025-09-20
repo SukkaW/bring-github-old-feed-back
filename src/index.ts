@@ -57,10 +57,10 @@ const css = (string: TemplateStringsArray, ...values: any[]) => string.reduce((a
 
       (window.IncludeFragmentElement as any).prototype.fetch = ignoreForYouFeedFetch;
     } else {
-      window.requestAnimationFrame(patchGithubIncludeFragmentElementFetch);
+      handle = window.requestAnimationFrame(patchGithubIncludeFragmentElementFetch);
     }
   };
-  window.requestAnimationFrame(patchGithubIncludeFragmentElementFetch);
+  handle = window.requestAnimationFrame(patchGithubIncludeFragmentElementFetch);
 
   if (targetEl) {
     // refine-github's infinite-scroll feature is targetting `[role="tabpanel"]:not([hidden]) button.ajax-pagination-btn`
