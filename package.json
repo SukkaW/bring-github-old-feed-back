@@ -1,6 +1,6 @@
 {
   "name": "bring-github-old-feed-back",
-  "version": "0.1.5",
+  "version": "0.1.6-beta.1",
   "description": "Replace GitHub new useless \"For You\" feed with the old \"Following\" one.",
   "repository": {
     "url": "https://github.com/SukkaW/bring-github-old-feed-back"
